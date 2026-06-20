@@ -9,7 +9,10 @@ SECRET_KEY = 'django-insecure-r+7^)es7^ins%#3ias5-s@3b7qgxx&1!xlw3-pzau=1p%*s!#g
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://cricketbackend-production-4899.up.railway.app",
+    "https://cricketdashboard.netlify.app",
+]
 CORS_ALLOW_ALL_ORIGINS = True
 
 INSTALLED_APPS = [
